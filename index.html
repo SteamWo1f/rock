@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
+    <script src="upload.php"></script>
+    <script src="server.js"></script>
 <body>
-    <h1>rock</h1>
-    <h3>a very simple static file server</h3>
+    <h1>Rock</h1>
+    <h3>A very simple static file server</h3>
+    <h4>Ver: 1.3</h4>
 
-    <h4><i>current status: still learning on how to set up a uploading system.</i></h4>
+    <h2>File Upload Form</h2>
+    <form method = "POST" action = "upload.php" enctype="multipart/form-data">
+        <label for="file">File name:</label>
+        <input type="file" name="uploadfile" />
+        <input type="submit" name="submit" value="Upload" />
+    </form>
+
 </body>
 </html>
